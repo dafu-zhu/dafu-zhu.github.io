@@ -19,7 +19,8 @@ Redesign dafu-zhu.github.io as a clean, professional portfolio targeting recruit
 
 ## Section 1: Config Updates
 
-**_config.yml changes:**
+**\_config.yml changes:**
+
 - Title: "Dafu Zhu"
 - Description: "Quantitative researcher specializing in factor models, statistics, and data infrastructure"
 - Keywords: "quantitative finance, factor investing, statistics, data infrastructure"
@@ -31,16 +32,19 @@ Redesign dafu-zhu.github.io as a clean, professional portfolio targeting recruit
 ## Section 2: About Page
 
 **Layout:**
+
 - Profile photo (right-aligned)
 - Short bio paragraph
 - GitHub stats card (github-readme-stats-fast.vercel.app)
 
 **Bio:**
+
 > Quantitative researcher with focus on factor models, statistical methods, and data infrastructure. Currently seeking internship opportunities in quantitative finance.
 >
 > My work spans alpha research, portfolio construction, and trading system development. I build end-to-end systems from data pipelines to backtesting frameworks.
 
 **Remove:**
+
 - Placeholder address/office number
 - Placeholder subtitle
 - Sample social links text
@@ -49,20 +53,22 @@ Redesign dafu-zhu.github.io as a clean, professional portfolio targeting recruit
 
 **Structure:** 4 project cards → detailed case study pages
 
-| Project | Company | Headline Metric |
-|---------|---------|-----------------|
-| DCAM | Infinity Capital | IC 0.087, 6.5-8.3% excess return |
-| All-Weather | Infinity Capital | Sharpe 1.34, -7.68% MaxDD |
-| Jump-Risk | China Industrial Securities | 3.5x Sharpe improvement |
-| Market Regime | China Industrial Securities | 2.15x vs 1.10x benchmark |
+| Project       | Company                     | Headline Metric                  |
+| ------------- | --------------------------- | -------------------------------- |
+| DCAM          | Infinity Capital            | IC 0.087, 6.5-8.3% excess return |
+| All-Weather   | Infinity Capital            | Sharpe 1.34, -7.68% MaxDD        |
+| Jump-Risk     | China Industrial Securities | 3.5x Sharpe improvement          |
+| Market Regime | China Industrial Securities | 2.15x vs 1.10x benchmark         |
 
 **Each project detail page:**
+
 1. Overview - What it is, key results
 2. Methodology - How it works (What/Why/How)
 3. Results - Performance metrics + embedded images/charts
 4. Tech Stack - Python, libraries used
 
 **Image sources:**
+
 - DCAM: Run `notebooks/02_dcam_baseline.ipynb`
 - All-Weather: Run `notebooks/all_weather_v1_baseline.ipynb`
 - Jump-Risk: Run `notebooks/06_methodology_complete.ipynb`
@@ -73,6 +79,7 @@ Redesign dafu-zhu.github.io as a clean, professional portfolio targeting recruit
 **Source:** `/Users/zdf/Downloads/main.tex`
 
 **resume.json structure:**
+
 - basics: name, location (Chicago, IL), email, LinkedIn, GitHub
 - education: UChicago MSFM (Expected Dec 2026), Xiamen B.Econ (June 2025) - NO GPA
 - work: 4 internships with bullet points
@@ -82,11 +89,13 @@ Redesign dafu-zhu.github.io as a clean, professional portfolio targeting recruit
 ## Section 5: Cleanup
 
 **Delete:**
+
 - 9 placeholder projects in `_projects/`
 - Einstein references in resume.json
 - Sample external blog posts (medium.com, Google Blog)
 
 **Update:**
+
 - Footer text (keep Jekyll/al-folio credit)
 - Remove Unsplash reference
 
@@ -113,9 +122,9 @@ Redesign dafu-zhu.github.io as a clean, professional portfolio targeting recruit
 
 ## Project Source Mapping
 
-| Website Project | Source Folder |
-|-----------------|---------------|
-| DCAM | `/Users/zdf/Documents/GitHub/dcam` |
-| All-Weather | `/Users/zdf/Documents/GitHub/all-weather` |
-| Jump-Risk | `/Users/zdf/Documents/GitHub/jump-risk` |
-| Market Regime | `/Users/zdf/Documents/GitHub/mkt-regime-analysis` |
+| Website Project | Source Folder                                     |
+| --------------- | ------------------------------------------------- |
+| DCAM            | `/Users/zdf/Documents/GitHub/dcam`                |
+| All-Weather     | `/Users/zdf/Documents/GitHub/all-weather`         |
+| Jump-Risk       | `/Users/zdf/Documents/GitHub/jump-risk`           |
+| Market Regime   | `/Users/zdf/Documents/GitHub/mkt-regime-analysis` |

@@ -14,6 +14,7 @@ category: internship
 Pure implementation of Ray Dalio's All Weather Strategy with Ledoit-Wolf covariance shrinkage and drift-threshold rebalancing.
 
 **Key Results:**
+
 - Sharpe Ratio: 1.34
 - Max Drawdown: -7.68%
 - 6-year backtest (2018-2024)
@@ -25,6 +26,7 @@ Pure implementation of Ray Dalio's All Weather Strategy with Ledoit-Wolf covaria
 Risk parity allocates by risk contribution rather than capital, ensuring each asset contributes equally to portfolio volatility. This provides true diversification since traditional portfolios are dominated by equity risk.
 
 **Process:**
+
 1. Estimate covariance using Ledoit-Wolf shrinkage (252-day lookback)
 2. Optimize weights for equal risk contribution
 3. Weekly rebalancing with drift-threshold to reduce turnover

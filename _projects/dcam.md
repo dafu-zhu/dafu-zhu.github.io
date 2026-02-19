@@ -14,6 +14,7 @@ category: internship
 Multi-factor equity model with dynamic factor weighting and momentum signals, applied as index enhancement strategy across CSI benchmarks.
 
 **Key Results:**
+
 - IC: 0.087 with ICIR 0.589
 - Annual excess return: 6.5-8.3% across CSI benchmarks
 
@@ -24,11 +25,13 @@ Multi-factor equity model with dynamic factor weighting and momentum signals, ap
 Context-aware factor stratification with ICIR-based dynamic weighting. Traditional models apply uniform weights; DCAM adjusts for context since large-cap value behaves differently from small-cap growth.
 
 **Architecture:**
+
 - 70% ICIR Baseline: Stratify by market cap, B/P, growth
 - 30% ML Predictor: ElasticNet for factor-return prediction
 - Lowdin orthogonalization for factor decorrelation
 
 **Process:**
+
 1. Stratify universe by context factors
 2. Calculate IC within each stratum
 3. Apply 24-month rolling ICIR weighting with 6-month momentum
