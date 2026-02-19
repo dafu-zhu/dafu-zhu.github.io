@@ -23,7 +23,7 @@ category: internship
 
 ## Methodology
 
-Detect market regimes using HMM on sector returns, then rotate into appropriate sectors. Market behavior differs dramatically across regimes—bull markets favor growth sectors while bear markets require defensive positioning.
+Detect market regimes using HMM on sector returns, then rotate into appropriate sectors. Market behavior differs dramatically across regimes. Bull markets favor growth sectors while bear markets require defensive positioning.
 
 **Process:**
 
@@ -37,9 +37,17 @@ Detect market regimes using HMM on sector returns, then rotate into appropriate 
 
 ## Results
 
-<img src="/assets/img/projects/regime_performance.png" alt="Strategy Performance" style="max-width: 600px; width: 100%;">
+### Strategy Performance
 
-<img src="/assets/img/projects/regime_timeline.png" alt="Regime Timeline" style="max-width: 600px; width: 100%;">
+The HMM sector rotation strategy achieves 2.15x cumulative return versus 1.10x for the benchmark over the 2018-2023 period. The staircase-like equity curve reflects the strategy's ability to stay in cash during sideways markets, avoiding drawdowns while capturing upside during bull regimes.
+
+<img src="/assets/img/projects/regime_performance.png" alt="Strategy Performance" style="max-width: 900px; width: 100%;">
+
+### Regime Classification
+
+The HMM correctly identifies major market events including the 2015 stock market crash, 2018 trade war, and COVID-19 selloff as bear regimes. 30-day probability smoothing eliminates regime whipsaw, reducing false transitions by 95%.
+
+<img src="/assets/img/projects/regime_timeline.png" alt="Regime Timeline" style="max-width: 900px; width: 100%;">
 
 ---
 

@@ -36,9 +36,17 @@ Risk parity allocates by risk contribution rather than capital, ensuring each as
 
 ## Results
 
-<img src="/assets/img/projects/allweather_equity.png" alt="Equity Curve" style="max-width: 600px; width: 100%;">
+### Equity Curve
 
-<img src="/assets/img/projects/allweather_weights.png" alt="Weight Evolution" style="max-width: 600px; width: 100%;">
+The All Weather portfolio returns +70% over the 2018-2026 backtest period, nearly doubling the CSI 300 benchmark (+36%). The strategy delivers smoother growth with significantly lower drawdowns, particularly during the 2022-2023 bear market where the benchmark fell while the portfolio held steady.
+
+<img src="/assets/img/projects/allweather_equity.png" alt="Equity Curve" style="max-width: 900px; width: 100%;">
+
+### Asset Allocation
+
+Risk parity naturally allocates ~70% to government bonds, which carry low volatility but contribute equal risk to equities and commodities. The weights remain stable over time, with only gradual shifts as cross-asset correlations evolve.
+
+<img src="/assets/img/projects/allweather_weights.png" alt="Weight Evolution" style="max-width: 900px; width: 100%;">
 
 ---
 
