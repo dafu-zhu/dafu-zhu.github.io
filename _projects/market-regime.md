@@ -22,13 +22,9 @@ category: internship
 
 ## Methodology
 
-### What
-Detect market regimes (Bull/Sideways/Bear) using HMM on sector returns, then rotate into appropriate sectors.
+Detect market regimes using HMM on sector returns, then rotate into appropriate sectors. Market behavior differs dramatically across regimes—bull markets favor growth sectors while bear markets require defensive positioning.
 
-### Why
-Market behavior differs dramatically across regimes. Bull markets favor growth sectors; bear markets require defensive positioning.
-
-### How
+**Process:**
 1. Train 3-state Gaussian HMM on 28 CITIC sector daily returns
 2. Apply 30-day probability smoothing (reduces whipsaw 95%)
 3. Bull: Long top 5 growth sectors (100% allocation)

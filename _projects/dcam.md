@@ -21,19 +21,17 @@ Multi-factor equity model with dynamic factor weighting and momentum signals, ap
 
 ## Methodology
 
-### What
-DCAM combines context-aware factor stratification with ICIR-based dynamic weighting:
-- 70% ICIR Baseline: Stratify by market cap, B/P, growth context
-- 30% ML Predictor: ElasticNet for global factor-return prediction
+Context-aware factor stratification with ICIR-based dynamic weighting. Traditional models apply uniform weights; DCAM adjusts for context since large-cap value behaves differently from small-cap growth.
+
+**Architecture:**
+- 70% ICIR Baseline: Stratify by market cap, B/P, growth
+- 30% ML Predictor: ElasticNet for factor-return prediction
 - Lowdin orthogonalization for factor decorrelation
 
-### Why
-Traditional factor models apply uniform weights across all market conditions. DCAM recognizes that factor efficacy varies by context (large-cap value behaves differently from small-cap growth).
-
-### How
-1. Stratify universe by context factors (market cap, B/P, growth)
-2. Calculate IC within each stratified group
-3. Apply 12-month rolling ICIR weighting
+**Process:**
+1. Stratify universe by context factors
+2. Calculate IC within each stratum
+3. Apply 24-month rolling ICIR weighting with 6-month momentum
 4. Blend with ML predictions using z-score normalization
 
 ---

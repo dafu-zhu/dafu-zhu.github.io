@@ -22,16 +22,12 @@ Pure implementation of Ray Dalio's All Weather Strategy with Ledoit-Wolf covaria
 
 ## Methodology
 
-### What
-Risk parity strategy where each asset contributes equally to portfolio risk, ensuring consistent performance across economic environments.
+Risk parity allocates by risk contribution rather than capital, ensuring each asset contributes equally to portfolio volatility. This provides true diversification since traditional portfolios are dominated by equity risk.
 
-### Why
-Traditional portfolios are dominated by equity risk. Risk parity allocates by risk contribution, not capital, providing true diversification.
-
-### How
+**Process:**
 1. Estimate covariance using Ledoit-Wolf shrinkage (252-day lookback)
 2. Optimize weights for equal risk contribution
-3. Weekly rebalancing with drift-threshold (reduce turnover)
+3. Weekly rebalancing with drift-threshold to reduce turnover
 4. Transaction cost modeling (0.03%)
 
 ---

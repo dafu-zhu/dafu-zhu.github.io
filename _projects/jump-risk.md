@@ -21,13 +21,9 @@ Validated jump-intensity anomaly on CSI300 using Lee-Mykland detection and SDF f
 
 ## Methodology
 
-### What
-Detect intraday price jumps using non-parametric methods and exploit the cross-sectional relationship between jump intensity and expected returns.
+Detect intraday price jumps using Lee-Mykland non-parametric methods and exploit the cross-sectional relationship between jump intensity and expected returns. Jump risk is systematic but often unpriced—stocks with high jump intensity earn lower expected returns.
 
-### Why
-Jump risk is systematic but often unpriced. Stocks with high jump intensity earn lower expected returns (negative risk premium for jump exposure).
-
-### How
+**Process:**
 1. Apply Lee-Mykland (2008) jump detection on 15-min tick data
 2. Calculate monthly jump intensity (sum of absolute jump returns)
 3. Sort stocks into deciles by jump intensity
