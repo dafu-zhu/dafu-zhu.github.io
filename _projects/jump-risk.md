@@ -77,15 +77,15 @@ Returns concentrate in specific periods (2020 COVID recovery, late 2022 rally). 
 
 ## Comparison with Original Paper
 
-| Metric | Paper (2003-2008) | Our Study (2019-2023) |
-|--------|-------------------|----------------------|
-| Universe | SSE A-shares | CSI300 |
-| Jump Frequency | 6.8% of days | 4.1% of days |
-| Q1-Q10 Return (raw) | +28% annualized | +15.8% annualized |
-| Q1-Q10 Sharpe (raw) | 1.67 | 0.36 |
-| Fama-MacBeth gamma | -0.124 (t=-5.54) | -0.19 (t=-3.8) |
-| Monotonic Pattern | Yes | No |
-| **With Regime Filter** | N/A | **+62.5% ann, Sharpe 1.63, MaxDD -24.4%** |
+| Metric                 | Paper (2003-2008) | Our Study (2019-2023)                     |
+| ---------------------- | ----------------- | ----------------------------------------- |
+| Universe               | SSE A-shares      | CSI300                                    |
+| Jump Frequency         | 6.8% of days      | 4.1% of days                              |
+| Q1-Q10 Return (raw)    | +28% annualized   | +15.8% annualized                         |
+| Q1-Q10 Sharpe (raw)    | 1.67              | 0.36                                      |
+| Fama-MacBeth gamma     | -0.124 (t=-5.54)  | -0.19 (t=-3.8)                            |
+| Monotonic Pattern      | Yes               | No                                        |
+| **With Regime Filter** | N/A               | **+62.5% ann, Sharpe 1.63, MaxDD -24.4%** |
 
 ---
 
