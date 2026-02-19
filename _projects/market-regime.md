@@ -39,9 +39,9 @@ Market behavior differs dramatically across regimes. Bull markets favor growth s
 
 ## Results
 
-![Strategy Performance](/assets/img/projects/regime_performance.png)
+<img src="/assets/img/projects/regime_performance.png" alt="Strategy Performance" style="max-width: 600px; width: 100%;">
 
-![Regime Timeline](/assets/img/projects/regime_timeline.png)
+<img src="/assets/img/projects/regime_timeline.png" alt="Regime Timeline" style="max-width: 600px; width: 100%;">
 
 ---
 

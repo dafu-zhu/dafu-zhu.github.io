@@ -40,9 +40,9 @@ Traditional factor models apply uniform weights across all market conditions. DC
 
 ## Results
 
-![Cumulative Returns](/assets/img/projects/dcam_cumulative.png)
+<img src="/assets/img/projects/dcam_cumulative.png" alt="Cumulative Returns" style="max-width: 600px; width: 100%;">
 
-![Quintile Performance](/assets/img/projects/dcam_quintile.png)
+<img src="/assets/img/projects/dcam_quintile.png" alt="Quintile Performance" style="max-width: 600px; width: 100%;">
 
 ---
 

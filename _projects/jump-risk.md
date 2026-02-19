@@ -2,7 +2,7 @@
 layout: page
 title: Jump-Risk Anomaly
 description: Intraday Jump Detection - 3.5x Sharpe Improvement
-img: assets/img/projects/jumprisk_portfolio.png
+img:
 importance: 3
 category: research
 ---
@@ -38,7 +38,7 @@ Jump risk is systematic but often unpriced. Stocks with high jump intensity earn
 
 ## Results
 
-![Portfolio Performance](/assets/img/projects/jumprisk_portfolio.png)
+*Performance charts coming soon*
 
 ---
 

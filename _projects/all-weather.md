@@ -38,9 +38,9 @@ Traditional portfolios are dominated by equity risk. Risk parity allocates by ri
 
 ## Results
 
-![Equity Curve](/assets/img/projects/allweather_equity.png)
+<img src="/assets/img/projects/allweather_equity.png" alt="Equity Curve" style="max-width: 600px; width: 100%;">
 
-![Weight Evolution](/assets/img/projects/allweather_weights.png)
+<img src="/assets/img/projects/allweather_weights.png" alt="Weight Evolution" style="max-width: 600px; width: 100%;">
 
 ---
 
