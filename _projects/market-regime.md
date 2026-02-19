@@ -35,9 +35,9 @@ Detect market regimes using HMM on sector returns, then rotate into appropriate 
 
 ## Results
 
-<img src="/assets/img/projects/regime_performance.png" alt="Strategy Performance" style="max-width: 600px; width: 100%;">
+<img src="/assets/img/projects/regime_performance.png" alt="Strategy Performance" style="max-width: 800px; width: 100%;">
 
-<img src="/assets/img/projects/regime_timeline.png" alt="Regime Timeline" style="max-width: 600px; width: 100%;">
+<img src="/assets/img/projects/regime_timeline.png" alt="Regime Timeline" style="max-width: 800px; width: 100%;">
 
 ---
 

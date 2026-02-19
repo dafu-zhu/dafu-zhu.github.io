@@ -38,9 +38,9 @@ Context-aware factor stratification with ICIR-based dynamic weighting. Tradition
 
 ## Results
 
-<img src="/assets/img/projects/dcam_cumulative.png" alt="Cumulative Returns" style="max-width: 600px; width: 100%;">
+<img src="/assets/img/projects/dcam_cumulative.png" alt="Cumulative Returns" style="max-width: 800px; width: 100%;">
 
-<img src="/assets/img/projects/dcam_quintile.png" alt="Quintile Performance" style="max-width: 600px; width: 100%;">
+<img src="/assets/img/projects/dcam_quintile.png" alt="Quintile Performance" style="max-width: 800px; width: 100%;">
 
 ---
 

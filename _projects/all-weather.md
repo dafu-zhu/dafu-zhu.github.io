@@ -34,9 +34,9 @@ Risk parity allocates by risk contribution rather than capital, ensuring each as
 
 ## Results
 
-<img src="/assets/img/projects/allweather_equity.png" alt="Equity Curve" style="max-width: 600px; width: 100%;">
+<img src="/assets/img/projects/allweather_equity.png" alt="Equity Curve" style="max-width: 800px; width: 100%;">
 
-<img src="/assets/img/projects/allweather_weights.png" alt="Weight Evolution" style="max-width: 600px; width: 100%;">
+<img src="/assets/img/projects/allweather_weights.png" alt="Weight Evolution" style="max-width: 800px; width: 100%;">
 
 ---
 
