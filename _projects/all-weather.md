@@ -15,8 +15,9 @@ Implementation of Ray Dalio's All Weather Strategy with Ledoit-Wolf covariance s
 
 **Key Results:**
 
-- Sharpe Ratio: 0.94 (backtest 2018-2026)
-- Max Drawdown: -4.15%
+- Sharpe Ratio: 1.11 (backtest 2018-2026)
+- Max Drawdown: -6.83%
+- Total Return: +93%
 - Live tracking since Jan 2026
 
 ---
@@ -44,7 +45,7 @@ Risk parity allocates by risk contribution rather than capital, ensuring each as
 
 ### Equity Curve
 
-The All Weather portfolio returns +80% over the 2018-2026 backtest period, significantly outperforming the CSI 300 benchmark (+17%). The strategy delivers smoother growth with max drawdown of just -4.15%, compared to the benchmark's -40% during the same period.
+The All Weather v2.1 portfolio returns +93% over the 2018-2026 backtest period, significantly outperforming the CSI 300 benchmark. The strategy delivers smoother growth with max drawdown of -6.83%, compared to the benchmark's much deeper drawdowns during market corrections.
 
 <img src="/assets/img/projects/allweather_equity.png" alt="Equity Curve" style="max-width: 900px; width: 100%;">
 
