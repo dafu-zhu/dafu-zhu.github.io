@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "projects-all-weather-strategy",
           title: 'All-Weather Strategy',
-          description: "Risk Parity Implementation - Sharpe 1.34, -7.68% MaxDD",
+          description: "Risk Parity v2.1 - Asymmetric Mean-Reversion",
           section: "Projects",handler: () => {
               window.location.href = "/projects/all-weather/";
             },},{id: "projects-dcam",
