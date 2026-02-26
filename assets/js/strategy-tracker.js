@@ -3,7 +3,7 @@
  * Fetches PnL data and renders interactive chart using Lightweight Charts
  */
 
-const DATA_URL = '/assets/data/pnl_tracker.json';
+const DATA_URL = 'https://raw.githubusercontent.com/dafu-zhu/all-weather/main/data/pnl_tracker.json';
 
 async function initStrategyTracker() {
   const container = document.getElementById('strategy-tracker-chart');
