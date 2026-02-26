@@ -1,7 +1,7 @@
 ---
 layout: page
 title: All-Weather Strategy
-description: Risk Parity Implementation - Sharpe 1.34, -7.68% MaxDD
+description: Risk Parity v2.1 - Asymmetric Mean-Reversion
 img: assets/img/projects/allweather_equity.png
 importance: 2
 category: internship
@@ -11,13 +11,13 @@ category: internship
 
 **Company:** Infinity Capital Management | **Role:** Quantitative Researcher Intern | **Period:** Mar-Jul 2024
 
-Pure implementation of Ray Dalio's All Weather Strategy with Ledoit-Wolf covariance shrinkage and drift-threshold rebalancing.
+Implementation of Ray Dalio's All Weather Strategy with Ledoit-Wolf covariance shrinkage and **asymmetric mean-reversion** (v2.1).
 
 **Key Results:**
 
-- Sharpe Ratio: 1.34
-- Max Drawdown: -7.68%
-- 6-year backtest (2018-2024)
+- Sharpe Ratio: 0.94 (backtest 2018-2026)
+- Max Drawdown: -4.15%
+- Live tracking since Jan 2026
 
 ---
 
@@ -25,11 +25,17 @@ Pure implementation of Ray Dalio's All Weather Strategy with Ledoit-Wolf covaria
 
 Risk parity allocates by risk contribution rather than capital, ensuring each asset contributes equally to portfolio volatility. This provides true diversification since traditional portfolios are dominated by equity risk.
 
+**v2.1 Enhancements:**
+
+1. **Asymmetric thresholds**: 3% trim (lock gains early) / 10% buy (patient on dips)
+2. **Daily drift checking**: Per-asset rebalancing when thresholds breached
+3. **Weekly optimization**: Target weights updated every Monday via risk parity
+
 **Process:**
 
 1. Estimate covariance using Ledoit-Wolf shrinkage (252-day lookback)
 2. Optimize weights for equal risk contribution
-3. Weekly rebalancing with drift-threshold to reduce turnover
+3. Daily monitoring with asymmetric drift thresholds
 4. Transaction cost modeling (0.03%)
 
 ---
@@ -38,7 +44,7 @@ Risk parity allocates by risk contribution rather than capital, ensuring each as
 
 ### Equity Curve
 
-The All Weather portfolio returns +70% over the 2018-2026 backtest period, nearly doubling the CSI 300 benchmark (+36%). The strategy delivers smoother growth with significantly lower drawdowns, particularly during the 2022-2023 bear market where the benchmark fell while the portfolio held steady.
+The All Weather portfolio returns +80% over the 2018-2026 backtest period, significantly outperforming the CSI 300 benchmark (+17%). The strategy delivers smoother growth with max drawdown of just -4.15%, compared to the benchmark's -40% during the same period.
 
 <img src="/assets/img/projects/allweather_equity.png" alt="Equity Curve" style="max-width: 900px; width: 100%;">
 
