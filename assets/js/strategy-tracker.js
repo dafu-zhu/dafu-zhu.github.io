@@ -89,18 +89,6 @@ async function initStrategyTracker() {
 
     areaSeries.setData(chartData);
 
-    // Add rebalance markers
-    if (data.rebalances && data.rebalances.length > 0) {
-      const markers = data.rebalances.map(r => ({
-        time: r.date,
-        position: 'aboveBar',
-        color: '#2196F3',
-        shape: 'circle',
-        text: `R ${r.drift}%`,
-      }));
-      areaSeries.setMarkers(markers);
-    }
-
     // Fit content
     chart.timeScale().fitContent();
 
