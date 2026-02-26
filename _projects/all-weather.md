@@ -26,7 +26,7 @@ Implementation of Ray Dalio's All Weather Strategy with Ledoit-Wolf covariance s
 
 Risk parity allocates by risk contribution rather than capital, ensuring each asset contributes equally to portfolio volatility. This provides true diversification since traditional portfolios are dominated by equity risk.
 
-**v2.1 Enhancements:**
+**Key Features:**
 
 1. **Asymmetric thresholds**: 3% trim (lock gains early) / 10% buy (patient on dips)
 2. **Daily drift checking**: Per-asset rebalancing when thresholds breached
@@ -45,7 +45,7 @@ Risk parity allocates by risk contribution rather than capital, ensuring each as
 
 ### Equity Curve
 
-The All Weather v2.1 portfolio returns +93% over the 2018-2026 backtest period, significantly outperforming the CSI 300 benchmark. The strategy delivers smoother growth with max drawdown of -6.83%, compared to the benchmark's much deeper drawdowns during market corrections.
+The All Weather portfolio returns +93% over the 2018-2026 backtest period, significantly outperforming the CSI 300 benchmark. The strategy delivers smoother growth with max drawdown of -6.83%, compared to the benchmark's much deeper drawdowns during market corrections.
 
 <img src="/assets/img/projects/allweather_equity.png" alt="Equity Curve" style="max-width: 900px; width: 100%;">
 
