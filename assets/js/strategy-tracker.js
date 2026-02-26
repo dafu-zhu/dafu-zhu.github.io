@@ -10,7 +10,7 @@ async function initStrategyTracker() {
   const metricsContainer = document.getElementById('strategy-tracker-metrics');
   const statusEl = document.getElementById('strategy-tracker-status');
 
-  if (!container) return;
+  if (!container || !metricsContainer || !statusEl) return;
 
   try {
     // Fetch data
