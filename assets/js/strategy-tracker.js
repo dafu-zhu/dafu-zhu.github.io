@@ -68,6 +68,8 @@ async function initStrategyTracker() {
       timeScale: {
         borderColor: '#ccc',
         timeVisible: false,
+        fixLeftEdge: true,
+        fixRightEdge: true,
       },
     });
 
