@@ -53,3 +53,38 @@ Risk parity naturally allocates ~70% to government bonds, which carry low volati
 ## Tech Stack
 
 Python, NumPy, pandas, scipy (optimization), Ledoit-Wolf shrinkage
+
+---
+
+## Live Strategy Tracker (2026)
+
+<p id="strategy-tracker-status" style="color: #666; font-size: 0.9em;">Loading...</p>
+
+<div id="strategy-tracker-metrics" style="display: flex; gap: 20px; margin-bottom: 15px; flex-wrap: wrap;">
+</div>
+
+<div id="strategy-tracker-chart" style="width: 100%; height: 300px; border: 1px solid #eee; border-radius: 4px;">
+</div>
+
+<style>
+  #strategy-tracker-metrics .metric {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    background: #f8f9fa;
+    border-radius: 4px;
+  }
+  #strategy-tracker-metrics .label {
+    font-size: 0.8em;
+    color: #666;
+  }
+  #strategy-tracker-metrics .value {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  #strategy-tracker-metrics .positive { color: #4caf50; }
+  #strategy-tracker-metrics .negative { color: #f44336; }
+</style>
+
+<script src="https://unpkg.com/lightweight-charts@4.1.0/dist/lightweight-charts.standalone.production.js"></script>
+<script src="/assets/js/strategy-tracker.js"></script>
