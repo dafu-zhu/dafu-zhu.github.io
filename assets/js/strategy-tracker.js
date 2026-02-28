@@ -62,7 +62,9 @@ async function initStrategyTracker() {
         horzLines: { color: "#eee" },
       },
       crosshair: {
-        mode: LightweightCharts.CrosshairMode.Normal,
+        mode: LightweightCharts.CrosshairMode.Magnet,
+        vertLine: { visible: true, labelVisible: true },
+        horzLine: { visible: false },
       },
       rightPriceScale: {
         borderColor: "#ccc",
@@ -76,10 +78,11 @@ async function initStrategyTracker() {
     });
 
     // Add benchmark line series (if available)
+    let benchmarkSeries = null;
     if (data.benchmark_pnl && data.benchmark_pnl.length > 0) {
-      const benchmarkSeries = chart.addLineSeries({
+      benchmarkSeries = chart.addLineSeries({
         color: "rgba(158, 158, 158, 0.8)",
-        lineWidth: 2,
+        lineWidth: 2.5,
         lineStyle: LightweightCharts.LineStyle.Dashed,
         lastValueVisible: false,
       });
@@ -95,7 +98,7 @@ async function initStrategyTracker() {
       topColor: "rgba(76, 175, 80, 0.4)",
       bottomColor: "rgba(76, 175, 80, 0.0)",
       lineColor: "rgba(76, 175, 80, 1)",
-      lineWidth: 2,
+      lineWidth: 2.5,
       lastValueVisible: false,
     });
 
@@ -106,6 +109,40 @@ async function initStrategyTracker() {
     }));
 
     areaSeries.setData(chartData);
+
+    // Create hover legend
+    const legendEl = document.createElement("div");
+    legendEl.style.cssText =
+      "font-size: 13px; padding: 4px 0; color: #666; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;";
+    container.parentNode.insertBefore(legendEl, container);
+
+    // Get latest values for default display
+    const latestStrategy = chartData[chartData.length - 1]?.value ?? 0;
+    const latestBenchmark = data.benchmark_pnl?.[data.benchmark_pnl.length - 1]?.value ?? 0;
+
+    const formatValue = (v) => (v >= 0 ? "+" : "") + v.toFixed(2) + "%";
+    const updateLegend = (strategyVal, benchmarkVal) => {
+      legendEl.innerHTML =
+        `<span style="color: rgba(76, 175, 80, 1);">Strategy: ${formatValue(strategyVal)}</span>` +
+        `<span style="color: #999; margin: 0 8px;">•</span>` +
+        `<span style="color: rgba(158, 158, 158, 0.9);">CSI 300: ${formatValue(benchmarkVal)}</span>`;
+    };
+
+    // Show latest values by default
+    updateLegend(latestStrategy, latestBenchmark);
+
+    // Update legend on hover
+    chart.subscribeCrosshairMove((param) => {
+      if (!param.time || !param.point) {
+        updateLegend(latestStrategy, latestBenchmark);
+        return;
+      }
+      const strategyData = param.seriesData.get(areaSeries);
+      const benchmarkData = benchmarkSeries && param.seriesData.get(benchmarkSeries);
+      const sVal = strategyData?.value ?? latestStrategy;
+      const bVal = benchmarkData?.value ?? latestBenchmark;
+      updateLegend(sVal, bVal);
+    });
 
     // Fit content
     chart.timeScale().fitContent();
