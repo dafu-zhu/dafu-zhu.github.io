@@ -81,7 +81,7 @@ async function initStrategyTracker() {
         color: "rgba(158, 158, 158, 0.8)",
         lineWidth: 2,
         lineStyle: LightweightCharts.LineStyle.Dashed,
-        title: data.benchmark || "Benchmark",
+        lastValueVisible: false,
       });
       const benchmarkData = data.benchmark_pnl.map((point) => ({
         time: point.date,
@@ -96,7 +96,7 @@ async function initStrategyTracker() {
       bottomColor: "rgba(76, 175, 80, 0.0)",
       lineColor: "rgba(76, 175, 80, 1)",
       lineWidth: 2,
-      title: "Strategy",
+      lastValueVisible: false,
     });
 
     // Transform data for chart
