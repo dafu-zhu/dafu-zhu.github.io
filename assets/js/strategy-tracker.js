@@ -75,12 +75,28 @@ async function initStrategyTracker() {
       },
     });
 
-    // Add area series
+    // Add benchmark line series (if available)
+    if (data.benchmark_pnl && data.benchmark_pnl.length > 0) {
+      const benchmarkSeries = chart.addLineSeries({
+        color: "rgba(158, 158, 158, 0.8)",
+        lineWidth: 2,
+        lineStyle: LightweightCharts.LineStyle.Dashed,
+        title: data.benchmark || "Benchmark",
+      });
+      const benchmarkData = data.benchmark_pnl.map((point) => ({
+        time: point.date,
+        value: point.value,
+      }));
+      benchmarkSeries.setData(benchmarkData);
+    }
+
+    // Add strategy area series
     const areaSeries = chart.addAreaSeries({
       topColor: "rgba(76, 175, 80, 0.4)",
       bottomColor: "rgba(76, 175, 80, 0.0)",
       lineColor: "rgba(76, 175, 80, 1)",
       lineWidth: 2,
+      title: "Strategy",
     });
 
     // Transform data for chart
